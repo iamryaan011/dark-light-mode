@@ -1,0 +1,46 @@
+:root {
+  --background: #ecf2f8;
+  --background-form: #fff;
+  --assets: #0000003b;
+  --color: #000;
+  --box-shadow-color: #0000003b
+}
+
+.dark-mode:root {
+  --background: #21262d;
+  --background-form: #1f242b;
+  --assets: #ffffff59;
+  --color: #fff;
+  --box-shadow-color: #00000059;
+}
+
+//global configs
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  font-family: "Jost", sans-serif;
+
+  background-color: var(--background);
+
+  &.dark-mode {
+    background-color: var(--background);
+    color: var(--color);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
